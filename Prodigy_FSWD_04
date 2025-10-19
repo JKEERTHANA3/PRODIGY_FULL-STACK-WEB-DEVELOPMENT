@@ -1,0 +1,488 @@
+HTML:
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">[Your Name]</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero-content">
+                <img src="profile-photo.jpg" alt="Your Professional Photo" class="profile-photo">
+                
+                <div class="hero-text">
+                    <h1>Hi, I'm [Your Name]</h1>
+                    <p class="headline">A Web Developer Creating Modern and Responsive Web Applications.</p>
+                    
+                    <p class="skills-summary">
+                        Specializing in: HTML | CSS | JavaScript | React | Node.js
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            
+            <p class="about-background">
+                Hello! I'm [Your Name], a passionate web developer based in [Your City]. I have a strong foundation in front-end and back-end technologies, and I love solving complex problems and building beautiful, user-friendly websites. My journey in tech started [X years ago / in college / etc.] when I discovered [Your story]...
+            </p>
+            
+            <div class="about-details">
+                <div class="experience">
+                    <h3>Professional Experience</h3>
+                    <div class="job">
+                        <strong>Web Developer</strong> @ [Company Name] (Jan 2023 - Present)
+                        <ul>
+                            <li>Developed and maintained responsive web applications using React and Node.js.</li>
+                            <li>Collaborated with designers to translate UI/UX wireframes into high-quality code.</li>
+                            <li>Optimized applications for maximum speed and scalability.</li>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <strong>Junior Developer</strong> @ [Previous Company] (Jun 2021 - Dec 2022)
+                        <ul>
+                            <li>Assisted in building features for [Project Name] using HTML, CSS, and jQuery.</li>
+                            <li>Fixed bugs and improved application performance.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="education">
+                    <h3>Education</h3>
+                    <div class="degree">
+                        <strong>B.S. in Computer Science</strong>
+                        <p>[Your University], [City] (2017 - 2021)</p>
+                    </div>
+                    <div class="degree">
+                        <strong>Web Development Bootcamp Certificate</strong>
+                        <p>[Bootcamp Name], [City] (2021)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <p>Here are a few projects I've worked on recently.</p>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Project Title 1 (e.g., E-commerce Site)</h3>
+                    <p>A brief description of the project, its purpose, and the technologies used. For example, "A full-stack e-commerce platform built with the MERN stack."</p>
+                    <a href="#" class="btn-link">View Code (GitHub)</a>
+                    <a href="#" class="btn-link">Live Demo</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project Title 2 (e.g., Tic-Tac-Toe Game)</h3>
+                    <p>A description of your Tic-Tac-Toe game. "A classic Tic-Tac-Toe game built with plain HTML, CSS, and JavaScript, focusing on game logic."</p>
+                    <a href="#" class="btn-link">View Code (GitHub)</a>
+                    <a href="#" class="btn-link">Live Demo</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project Title 3 (e.g., Portfolio Website)</h3>
+                    <p>You can even feature this portfolio! "My personal portfolio website, designed to be fully responsive and showcase my work."</p>
+                    <a href="#" class="btn-link">View Code (GitHub)</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills & Technologies</h2>
+            <p>These are the technologies I work with regularly:</p>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3 (Flexbox, Grid, SASS)</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>MongoDB</li>
+                <li>Git & GitHub</li>
+                <li>REST APIs</li>
+                <li>Responsive Design</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2025 [Your Name]. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">GitHub</a> | 
+            <a href="#">LinkedIn</a> | 
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+CSS:
+
+
+
+
+
+/* --- Global Styles --- */
+:root {
+    --primary-color: #0056b3; /* A strong blue */
+    --secondary-color: #007bff; /* A lighter, vibrant blue */
+    --background-color: #f8f9fa; /* Light grey background */
+    --text-color: #333;
+    --card-bg: #ffffff;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Adds smooth scrolling when clicking nav links */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: var(--card-bg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* --- Home (Hero) Section --- */
+#home {
+    background-color: var(--card-bg);
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--secondary-color);
+    box-shadow: var(--shadow);
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.hero-text .headline {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin: 10px 0;
+}
+
+.hero-text .skills-summary {
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: 500;
+}
+
+/* --- "About Me" Section --- */
+.about-background {
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.about-details {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.experience, .education {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    flex-basis: 450px; /* Each takes up a good portion */
+}
+
+.experience h3, .education h3 {
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.job, .degree {
+    margin-bottom: 20px;
+}
+
+.job strong, .degree strong {
+    font-size: 1.1rem;
+    color: #000;
+}
+
+/* --- Projects Section --- */
+#projects {
+    background-color: var(--card-bg);
+}
+
+#projects > p {
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.btn-link {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-link:hover {
+    background-color: var(--primary-color);
+}
+
+/* --- Skills Section --- */
+#skills > p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 800px;
+    margin: 30px auto 0 auto;
+}
+
+.skills-list li {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: var(--primary-color);
+    color: #f8f9fa;
+}
+
+footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    h2 { font-size: 2rem; }
+
+    /* Mobile Nav (simple stack) */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+    }
+    nav ul li {
+        margin: 5px 0;
+        width: 100%;
+    }
+    nav ul li a {
+        display: block;
+        padding: 8px;
+        background: #f4f4f4;
+        border-radius: 4px;
+        text-align: center;
+    }
+
+    /* Hero Section Stack */
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text h1 { font-size: 2.5rem; }
+    .hero-text .headline { font-size: 1.3rem; }
+    .profile-photo { width: 200px; height: 200px; }
+
+    /* About Section Stack */
+    .about-details {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+JAVA SCRIPT:
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Smooth scrolling for navigation links
+    const navLinks = document.querySelectorAll('nav ul li a');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            // Prevent the default jump
+            e.preventDefault(); 
+            
+            // Get the target element's ID from the href
+            const targetId = this.getAttribute('href');
+            
+            // Find the target element
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                // Scroll smoothly to the target element
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+});
